@@ -5,7 +5,7 @@ from openai import AzureOpenAI
 # endpoint of westus
 azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT_WESTUS")
 api_key = os.getenv("AZURE_OPENAI_API_KEY_WESTUS")
-api_version = "2024-05-01-preview"
+api_version = os.getenv("AZURE_OPENAI_VERSION")
 model = "gpt-4o"
 
 client = AzureOpenAI(
